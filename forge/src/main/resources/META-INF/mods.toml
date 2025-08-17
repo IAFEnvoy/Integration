@@ -1,0 +1,27 @@
+modLoader = "javafml"
+loaderVersion = "[0,)"
+issueTrackerURL = "https://github.com/IAFEnvoy/Integration/issues"
+license = "LGPL-3.0"
+
+[[mods]]
+modId = "integration"
+version = "${version}"
+displayName = "Integration"
+authors = "IAFEnvoy"
+description = '''
+Library for better mod integrations.
+'''
+
+[[dependencies.integration]]
+modId = "forge"
+mandatory = true
+versionRange = "[0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.integration]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[0,)"
+ordering = "NONE"
+side = "BOTH"
