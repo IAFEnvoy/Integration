@@ -2,6 +2,10 @@
 
 This is a library mod to help other mods make integration easier.
 
+## How to use
+
+Use `maven { url 'https://jitpack.io' }`. for more info, see https://jitpack.io/#IAFEnvoy/Integration
+
 ## Core APIs
 
 - `IntegrationExecutor`: Safely run integration code only when target mod loaded.
