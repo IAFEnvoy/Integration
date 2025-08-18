@@ -12,7 +12,7 @@ public final class IntegrationExecutor {
         return Proxy.isModLoaded(modId) ? Optional.ofNullable(supplier.get().get()) : Optional.empty();
     }
 
-    public static <T> T getWhenLoad(String modId, Supplier<Supplier<T>> supplier, T defaultValue) {
-        return getWhenLoad(modId, supplier).orElse(defaultValue);
+    public static <T> T getWhenLoad(String modId, Supplier<Supplier<T>> supplier, Supplier<T> defaultValue) {
+        return getWhenLoad(modId, supplier).orElse(defaultValue.get());
     }
 }
