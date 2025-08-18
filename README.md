@@ -2,6 +2,8 @@
 
 This is a library mod to help other mods make integration easier.
 
+This mod is based on loaders' api, not Minecraft's. So it can run on any versions if the loader supported.
+
 ## How to use
 
 - Use `maven { url "https://maven.kessokuteatime.work/releases" }`. for more info,
