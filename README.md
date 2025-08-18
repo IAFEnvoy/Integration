@@ -4,7 +4,9 @@ This is a library mod to help other mods make integration easier.
 
 ## How to use
 
-Use `maven { url 'https://jitpack.io' }`. for more info, see https://jitpack.io/#IAFEnvoy/Integration
+- Use `maven { url "https://maven.kessokuteatime.work/releases" }`. for more info,
+  see https://maven.kessokuteatime.work/#/releases/com/iafenvoy/integration
+- Use `maven { url "https://jitpack.io" }`. for more info, see https://jitpack.io/#IAFEnvoy/Integration
 
 ## Core APIs
 
@@ -15,10 +17,10 @@ Use `maven { url 'https://jitpack.io' }`. for more info, see https://jitpack.io/
 
 ### Integration with `example-mod`
 
-```
+```java
 IntegrationExecutor.runWhenLoad("example-mod",()->()->{
-    //Your code here.
-});
+        //Your code here.
+        });
 ```
 
 ### Customize entry point
@@ -45,6 +47,6 @@ public class ExampleModIntegration implements IntegrationEntryPoint {
 
 Get this entrypoint:
 
-```
+```java
 EntryPointManager.getEntryPoints("example-mod");
 ```
